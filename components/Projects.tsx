@@ -23,9 +23,9 @@ export default function Projects() {
     ];
 
     return (
-        <section className="relative z-10 w-full min-h-screen bg-[#121212] flex flex-col items-center justify-center py-24 px-4">
+        <section id="case-studies" className="relative z-10 w-full min-h-screen bg-[#121212] flex flex-col items-center justify-center py-24 px-4">
             <div className="max-w-7xl w-full">
-                <h2 className="text-4xl md:text-6xl font-bold text-white mb-16 text-center tracking-tight">Selected Work</h2>
+                <h2 className="text-4xl md:text-6xl font-bold text-white mb-16 text-center tracking-tight">Selected Case Studies</h2>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {projects.map((project, index) => (
