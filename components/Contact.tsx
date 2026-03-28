@@ -25,7 +25,7 @@ export default function Contact() {
 
                         <div className="flex flex-col gap-6">
                             <a
-                                href="https://calendly.com/your-profile"
+                                href="https://calendly.com/choudhurysubhadeep51347"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center gap-4 group"
@@ -40,7 +40,7 @@ export default function Contact() {
                             </a>
 
                             <a
-                                href="mailto:hello@subhadeep.ai"
+                                href="mailto:choudhurysubhadeep51347@gmail.com"
                                 className="flex items-center gap-4 group"
                             >
                                 <div className="w-12 h-12 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-500 group-hover:bg-blue-500 group-hover:text-white transition-all">
@@ -67,22 +67,29 @@ export default function Contact() {
                         whileInView={{ opacity: 1, scale: 1 }}
                         className="bg-white/5 border border-white/10 p-8 md:p-12 rounded-[40px] backdrop-blur-xl"
                     >
-                        <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                        <form className="space-y-6" onSubmit={(e) => {
+                            e.preventDefault();
+                            const formData = new FormData(e.currentTarget);
+                            const name = formData.get('name') || '';
+                            const email = formData.get('email') || '';
+                            const message = formData.get('message') || '';
+                            window.location.href = `mailto:choudhurysubhadeep51347@gmail.com?subject=${encodeURIComponent(`Message from ${name}`)}&body=${encodeURIComponent(`${message}\n\nReply to: ${email}`)}`;
+                        }}>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div className="space-y-2">
                                     <label className="text-sm font-medium text-gray-400">Name</label>
-                                    <input type="text" placeholder="John Doe" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors" />
+                                    <input name="name" type="text" placeholder="John Doe" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors" />
                                 </div>
                                 <div className="space-y-2">
                                     <label className="text-sm font-medium text-gray-400">Email</label>
-                                    <input type="email" placeholder="john@company.com" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors" />
+                                    <input name="email" type="email" placeholder="john@company.com" className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors" />
                                 </div>
                             </div>
                             <div className="space-y-2">
                                 <label className="text-sm font-medium text-gray-400">Message</label>
-                                <textarea placeholder="Tell me about your project..." rows={4} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors resize-none" />
+                                <textarea name="message" placeholder="Tell me about your project..." rows={4} className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-blue-500 transition-colors resize-none" />
                             </div>
-                            <button className="w-full bg-white text-black font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-blue-500 hover:text-white transition-all group">
+                            <button type="submit" className="w-full bg-white text-black font-bold py-4 rounded-xl flex items-center justify-center gap-2 hover:bg-blue-500 hover:text-white transition-all group">
                                 Send Message <Send size={18} className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
                             </button>
                         </form>

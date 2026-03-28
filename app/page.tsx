@@ -39,9 +39,9 @@ export default function Home() {
       {/* ENHANCED CONTENT */}
       <WhoIHelp />
       <Services />
-      <Projects />
+      {/* <Projects /> */}
       <Process />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Insights />
       <Contact />
     </main>
