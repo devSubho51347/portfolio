@@ -24,7 +24,7 @@ export const blogs: Blog[] = [
     {
         title: "Unleash Web Scraping Power with Selenium for Data Science",
         description: "Learn how to use Selenium for web scraping and data extraction for data science projects.",
-        category: "Data Science",
+        category: "LLM",
         readTime: "10 min read",
         link: "https://blog.futuresmart.ai/unleash-web-scraping-power-with-selenium-for-data-science"
     },
