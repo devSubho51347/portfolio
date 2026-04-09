@@ -5,19 +5,19 @@ import { Quote } from "lucide-react";
 
 const testimonials = [
     {
-        quote: "Subhadeep's ability to simplify complex ML architectures saved our engineering team months of trial and error.",
-        author: "Tech Lead",
-        company: "FinTech Startup",
+        quote: "Subhadeep stands out for his strong entrepreneurial mindset and deep technical expertise. He consistently approaches problems with a focus on impact, scalability, and real-world value, going beyond just building models to delivering meaningful business outcomes. His ability to bridge business understanding with advanced machine learning, combined with his ownership-driven attitude and curiosity, makes him a highly valuable collaborator and a natural problem solver. I highly recommend him for roles that demand innovation and forward-thinking execution.",
+        author: "Data Science Lead",
+        company: "ZS Associates",
         image: "https://i.pravatar.cc/150?u=1"
     },
     {
-        quote: "The LLM pipeline he built for us handled a 10x spike in traffic without a single failure. Truly production-grade.",
-        author: "Director of AI",
-        company: "Enterprise SaaS",
-        image: "https://i.pravatar.cc/150?u=2"
+        quote: "I had the chance to work alongside Subhadeep as a peer, and what stood out most was his entrepreneurial mindset and proactive approach. While we were often tackling similar problems, he consistently pushed boundaries—thinking beyond the immediate task to explore scalable and impactful solutions. He’s someone who takes initiative, experiments with new ideas, and isn’t afraid to challenge the usual way of doing things. Along with his strong technical skills, this mindset makes him a great teammate to learn from and collaborate with. Highly recommend working with him.",
+        author: "Data Science Associate Consultant",
+        company: "ZS Associates",
+        image: "https://media.licdn.com/dms/image/v2/D4D03AQGgxQK3wzENhA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1679937436052?e=1777507200&v=beta&t=q4--KZ-12CzPQZ2JXV3B4CjPc4vZ-H_CugvFBf0Zhqo"
     },
     {
-        quote: "His strategic audit revealed inefficiencies in our MLOps that cut our cloud compute costs by nearly 40%.",
+        quote: "His RAG Customer Support Pipeline helped us reduce our average response time by 30% and significantly improved customer satisfaction. Subhadeep's ability to understand our unique challenges and tailor a solution that seamlessly integrated with our existing systems was impressive. His proactive communication and dedication to ensuring the success of the project made the entire process smooth and efficient. I highly recommend Subhadeep for any organization looking to leverage AI for customer support or similar applications.",
         author: "CTO",
         company: "Health-Tech Firm",
         image: "https://i.pravatar.cc/150?u=3"
