@@ -6,7 +6,7 @@ import { Quote } from "lucide-react";
 const testimonials = [
     {
         quote: "Subhadeep stands out for his strong entrepreneurial mindset and deep technical expertise. He consistently approaches problems with a focus on impact, scalability, and real-world value, going beyond just building models to delivering meaningful business outcomes. His ability to bridge business understanding with advanced machine learning, combined with his ownership-driven attitude and curiosity, makes him a highly valuable collaborator and a natural problem solver. I highly recommend him for roles that demand innovation and forward-thinking execution.",
-        author: "Data Science Lead",
+        author: "Data Science Senior Consultant",
         company: "ZS Associates",
         image: "https://i.pravatar.cc/150?u=1"
     },
